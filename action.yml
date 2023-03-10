@@ -1,0 +1,12 @@
+name: Get Package Manager
+description: Get which package manager you're using (yarn or pnpm or npm).
+author: bubkoo <bubkoo.wy@gmail.com>
+outputs:
+  pm:
+    description: Package manager in use
+runs:
+  using: node16
+  main: dist/index.js
+branding:
+  icon: package
+  color: blue
