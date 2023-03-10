@@ -8,10 +8,11 @@ on:
       - alpha
       - beta
 jobs:
-  run:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: bubkoo/reusable-workflows/.github/actions/release-github-action@master
         with:
           app-id: ${{ secrets.APP_ID }}
           private-key: ${{ secrets.PRIVATE_KEY }}
+          build-command: build
